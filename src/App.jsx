@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './Component/Navbar/Navbar'
 import Banner from './Component/Banner/Banner'
+import Rating from './Component/Rating/Rating'
 
 
 
@@ -18,6 +19,12 @@ const getBannerdata = async () => {
   return res.json();
 };
 const bannerData = getBannerdata();
+const getstatsData = async () => {
+  const res = await fetch("/rating.json");
+  return res.json();
+};
+
+const starsDatas = getstatsData();
 
 function App() {
 
@@ -30,6 +37,8 @@ function App() {
         <Navbar navgationData={navgationData} cartsData={cartsData}></Navbar>
       </Suspense>
       <Banner bannerData={bannerData}></Banner>
+      <Rating starsDatas={starsDatas}></Rating>
+
 
     </>
   )
