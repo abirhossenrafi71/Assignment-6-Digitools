@@ -9,6 +9,7 @@ import CartModal from './Component/Cart/cardmodals'
 import Step from './Component/Step/step'
 import Transparent from './Component/Transparent/transparent'
 import Workflow from './Component/Workflow/workflow'
+import Footer from './Component/Footer/footer'
 const getNavData = async () => {
   const res = await fetch("/navbar.json");
   return res.json();
@@ -34,6 +35,11 @@ const getTransparentDataLoad = async () => {
   return res.json();
 };
 const getTransparentData = getTransparentDataLoad();
+const getFooterData = async () => {
+  const res = await fetch("/footer.json");
+  return res.json();
+};
+const footerData = getFooterData();
 function App() {
   const [activetab, setactiveTab] = useState("products");
   const [cartsData, setCartsData] = useState([]);
@@ -53,7 +59,7 @@ function App() {
             role="tab"
             className="tab rounded-full px-8 transition-all duration-300 font-bold"
             aria-label="Products"
-            onClick={() => setactiveTab("products")} 
+            onClick={() => setactiveTab("products")}
             defaultChecked
           />
           <input
@@ -81,6 +87,7 @@ function App() {
       <Step></Step>
       <Transparent getTransparentData={getTransparentData}></Transparent>
       <Workflow></Workflow>
+      <Footer footerData={footerData}></Footer>
     </>
   )
 }

@@ -1,16 +1,44 @@
-# React + Vite
+# 🚀 DigiTools - Ultimate Workflow Transformer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Description
+DigiTools is a modern all-in-one digital suite designed for creators, professionals, and businesses. It helps users manage projects, collaborate with teams, and streamline workflows through a fast, intuitive, and responsive interface.
 
-Currently, two official plugins are available:
+## 🛠️ Technologies Used
+- React
+- Vite
+- React Hooks
+- React Icons
+- Tailwind CSS
+- Netlify
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+### 💎 Dynamic Pricing System
+- Interactive pricing plans (Starter, Pro, Enterprise)
+- Real-time updates
+- "Most Popular" plan highlighting
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛒 Advanced Cart System
+- State-driven shopping cart
+- Live notification badge
+- Smooth checkout modal experience
 
-## Expanding the ESLint configuration
+### 📱 Fully Responsive Design
+- Optimized for Desktop, Tablet, and Mobile
+- Modern and user-friendly UI
+- Built with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔗 Live Demo
+https://assignment06-digitools.netlify.app/
+
+## 📦 Installation
+
+```bash
+git clone <https://github.com/abirhossenrafi71/Assignment-6-Digitools>
+cd DigiTools
+npm install
+npm run dev
+```
+
+## 🚀 Deployment
+Deployed on Netlify.
