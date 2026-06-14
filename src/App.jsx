@@ -7,6 +7,7 @@ import Premium from './Component/Cart/Premium'
 import Carts from './Component/Cart/carts'
 import CartModal from './Component/Cart/cardmodals'
 import Step from './Component/Step/step'
+import Transparent from './Component/Transparent/transparent'
 const getNavData = async () => {
   const res = await fetch("/navbar.json");
   return res.json();
@@ -27,6 +28,11 @@ const cartsAllData = async () => {
   return res.json();
 };
 const cartsList = cartsAllData();
+const getTransparentDataLoad = async () => {
+  const res = await fetch("/transparent.json");
+  return res.json();
+};
+const getTransparentData = getTransparentDataLoad();
 function App() {
   const [activetab, setactiveTab] = useState("products");
   const [cartsData, setCartsData] = useState([]);
@@ -72,6 +78,7 @@ function App() {
         )}
       </div>
       <Step></Step>
+      <Transparent getTransparentData={getTransparentData}></Transparent>
     </>
   )
 }
