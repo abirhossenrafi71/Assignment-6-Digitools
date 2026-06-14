@@ -6,6 +6,7 @@ import Rating from './Component/Rating/Rating'
 import Premium from './Component/Cart/Premium'
 import Carts from './Component/Cart/carts'
 import CartModal from './Component/Cart/cardmodals'
+import Step from './Component/Step/step'
 const getNavData = async () => {
   const res = await fetch("/navbar.json");
   return res.json();
@@ -70,6 +71,7 @@ function App() {
           <CartModal cartsData={cartsData} setCartsData={setCartsData} />
         )}
       </div>
+      <Step></Step>
     </>
   )
 }
