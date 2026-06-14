@@ -8,6 +8,7 @@ import Carts from './Component/Cart/carts'
 import CartModal from './Component/Cart/cardmodals'
 import Step from './Component/Step/step'
 import Transparent from './Component/Transparent/transparent'
+import Workflow from './Component/Workflow/workflow'
 const getNavData = async () => {
   const res = await fetch("/navbar.json");
   return res.json();
@@ -79,6 +80,7 @@ function App() {
       </div>
       <Step></Step>
       <Transparent getTransparentData={getTransparentData}></Transparent>
+      <Workflow></Workflow>
     </>
   )
 }
